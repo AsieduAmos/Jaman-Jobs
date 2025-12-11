@@ -1,10 +1,12 @@
 import React from 'react'
-import Home from './components/Home.jsx'
-
-
+import AuthPage from './pages/AuthPage.jsx'
 const App = () => {
   return (
-   <Home />
+    <>
+    <AuthPage />
+   
+   
+    </> 
   )
 }
 
