@@ -1,5 +1,6 @@
 import React from 'react'
-import FJ from '../assets/images/FJ.png'
+import FJ from '../images/FJ.png'
+
 const NavBar = () => {
   return (
     <>

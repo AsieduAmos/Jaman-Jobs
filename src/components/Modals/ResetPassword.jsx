@@ -3,7 +3,7 @@ import React from 'react'
 const ResetPassword = () => {
   return (
 <>
-    <form className='space-y-5 px-5 py-10 bg-gray-500 w-full h-130'>
+    <form className='space-y-7 px-5 py-10 bg-gray-500 w-full h-130'>
         <h3 className='text-xl font-bold text-white'>Reset Password</h3>
         <p className='text-white'>
               Forgot your password? Enter your E-mail address below. 

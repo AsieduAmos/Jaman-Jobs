@@ -13,7 +13,7 @@ const SignUp = () => {
                  name='Full Name'
                  id='Full Name' 
                  required
-                 placeholder='Asidu Amos'
+                 placeholder='Asiedu Amos'
            />
       </div>
 

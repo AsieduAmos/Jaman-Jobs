@@ -1,7 +1,8 @@
 import React from 'react'
-import Login from './Login'
+import login from './Login'
 import SignUp from './SignUp'
 import ResetPassword from './ResetPassword'
+import Login from './Login'
 
 const AuthModal = () => {
   return (
@@ -20,7 +21,7 @@ const AuthModal = () => {
                     X
                 </button>
                 </div>
-                <SignUp/>
+                <Login/>
             </div>
         </div>
     </div>
