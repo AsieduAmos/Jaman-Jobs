@@ -1,7 +1,10 @@
 import React from 'react'
 
+
+
 const Login = () => {
-  return (
+
+    return (
 <>
    
     <form className='space-y-5 px-5 py-10 bg-gray-500 w-full h-130'>
@@ -45,7 +48,10 @@ const Login = () => {
     </button>
 
      <div className='text-gray-900 '>Not Registered?
-        <a href='#' className='hover:underline text-white text-lg font-bold'> Create Account</a>
+        <a href='#' className='hover:underline text-white text-lg font-bold'
+        
+        > Create Account</a>
+       
      </div>
     
    </form> 

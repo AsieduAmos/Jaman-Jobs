@@ -4,11 +4,11 @@ type AuthModalState = {
     isOpen: boolean; 
     type: 'login' | 'regiter' | 'forgotPassword';
 };
-const defaultAuthModalState: AuthModalState = {
+const initialAuthModalState: AuthModalState = {
     isOpen: false,
     type: 'login',
 };
 export const authModalState = atom<AuthModalState>({
     key: 'authModalState',
-    default: defaultAuthModalState,
-});
+    default: initialAuthModalState,
+});  

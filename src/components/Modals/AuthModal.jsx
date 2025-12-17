@@ -1,10 +1,12 @@
 import React from 'react'
-import login from './Login'
+import Login from './Login'
 import SignUp from './SignUp'
 import ResetPassword from './ResetPassword'
-import Login from './Login'
+
+
 
 const AuthModal = () => {
+
   return (
     <>
      <div className='flex justify-center items-center  '>
@@ -21,7 +23,7 @@ const AuthModal = () => {
                     X
                 </button>
                 </div>
-                <Login/>
+                <Login />
             </div>
         </div>
     </div>
