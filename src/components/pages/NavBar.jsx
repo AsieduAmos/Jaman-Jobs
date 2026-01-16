@@ -6,7 +6,7 @@ import { useState } from 'react'
 const NavBar = () => {
 
   const[signIn, setSignin] = useState(false)
-
+   
   return (
     <>
     

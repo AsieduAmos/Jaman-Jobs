@@ -4,9 +4,8 @@ import SignUp from './SignUp'
 import ResetPassword from './ResetPassword'
 
 
-
 const AuthModal = () => {
-
+ 
   return (
     <>
      <div className='flex justify-center items-center  '>

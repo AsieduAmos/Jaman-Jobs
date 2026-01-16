@@ -1,12 +1,15 @@
 import React from 'react'
+import SignUp from  './SignUp'
+import ResetPassword from './ResetPassword'
 
 
 
 const Login = () => {
+  
 
     return (
 <>
-   
+  
     <form className='space-y-5 px-5 py-10 bg-gray-500 w-full h-130'>
          <h3 className='text-2xl font-bold text-white'>Sing In To find job</h3>
      <div>
@@ -44,19 +47,18 @@ const Login = () => {
         
 
      <button className='flex justify-end w-full text-white hover:underline hover:text-white hover:font-bold'>
-        <a href='#' ></a>Forgot Password?
+        <a href='' ></a>Forgot Password?
     </button>
 
      <div className='text-gray-900 '>Not Registered?
-        <a href='#' className='hover:underline text-white text-lg font-bold'
-        
+        <a href='/SignUp' className='hover:underline text-white text-lg font-bold'
         > Create Account</a>
        
      </div>
     
    </form> 
 
-    
+   
 </>
   )
 }
