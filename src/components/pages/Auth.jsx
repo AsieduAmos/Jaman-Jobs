@@ -15,7 +15,7 @@ const Auth = () => {
             </div>
         </div>
            
-        <div className='flex items-center justify-center mt-20 pointer-events-none select-none'>
+        <div className='flex items-center justify-center mt-20 mb-30 pointer-events-none select-none'>
             <img className='w-18'src={FJ} alt="" />
         </div>
            
