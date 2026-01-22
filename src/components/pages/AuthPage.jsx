@@ -15,6 +15,7 @@ const AuthPage = () => {
       <NavBar />
       <Auth />
       <JobPage />
+      <FindAdd />
      </div>
     </>
   )
