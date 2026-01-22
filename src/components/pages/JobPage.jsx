@@ -1,9 +1,11 @@
 import React from 'react'
+import HomeAddjobNavBar from './HomeAddjobNavBar'
 
 const JobPage = () => {
   return (
    <>
-    <div className='bg-gray-300 font-bold text-3xl text-center text-indigo-800 py-3 mx-10 rounded-md'>Browse Jobs</div>
+    <HomeAddjobNavBar />
+    <div className='bg-slate-100 font-bold text-3xl text-center text-indigo-800 p-4 mx-50 rounded-md'>Browse Jobs</div>
 
    </>
   )
