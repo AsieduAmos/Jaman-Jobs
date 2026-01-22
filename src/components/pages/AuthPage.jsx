@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import Auth from './Auth' 
 import AuthModal from '../Modals/AuthModal'
 import FindAdd from './FindAdd'
+import JobPage from './JobPage'
 
 
 
@@ -13,7 +14,7 @@ const AuthPage = () => {
     <div className='h-screen mx-auto relative '>
       <NavBar />
       <Auth />
-      <FindAdd />
+      <JobPage />
      </div>
     </>
   )

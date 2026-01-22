@@ -23,7 +23,7 @@ const FindAdd = () => {
                  Jobs
              </button>
              
-          </div>
+    </div>
   <div className='flex items-center justify-center mt-20'>
     <div className='bg-gray-200 text-indigo-900 w-120 ml-12 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Employers</h2>
@@ -37,7 +37,7 @@ const FindAdd = () => {
                               transition duration-300 ease-in-out'>Add Job</a>
       </div>
 
-     <div className='bg-white text-indigo-900 w-120 ml-8 p-5 shadow-md rounded-lg'>
+     <div className='bg-gray-100 text-indigo-900 w-120 ml-8 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Job Seekers</h2>
         <p className='font-normal text-md pb-5'> 
             Looking for your next career opportunity?
