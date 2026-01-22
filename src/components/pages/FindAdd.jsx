@@ -25,7 +25,7 @@ const FindAdd = () => {
              
           </div>
   <div className='flex items-center justify-center mt-20'>
-    <div className='bg-gray-50 text-indigo-900 w-120 ml-12 p-5 shadow-md rounded-lg'>
+    <div className='bg-gray-200 text-indigo-900 w-120 ml-12 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Employers</h2>
         <p className='font-normal text-md pb-5'> 
           Our platform makes it easy to find the perfect fit for your team.
