@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeAddjobNavBar from './HomeAddjobNavBar'
+import HomeAddjobNavBar from '../components/HomeAddjobNavBar'
 
 const FindAdd = () => {
   return (
