@@ -10,6 +10,7 @@ import Login from './pages/Login'
 import ResetPassword from './pages/ResetPassword'
 import AuthModal from './pages/AuthModal'
 
+
 const App = () => {
 
   const router = createBrowserRouter(
@@ -18,11 +19,11 @@ const App = () => {
     <Route path='/' element={<MainLayout />} >
       <Route index element={<Authpage />} />
       <Route path='findadd' element={<FindAdd />} />
-       <Route path='jobpage' element={<JobPage/>} />
-        <Route path='signup' element={<SignUp />} />
-         <Route path='login' element={<Login />} />
-          <Route path='resetpassword' element={<ResetPassword />} />
-           <Route path='authmodal' element={<AuthModal/>} />
+      <Route path='jobpage' element={<JobPage/>} />
+      <Route path='signup' element={<SignUp />} />
+      <Route path='login' element={<Login />} />
+      <Route path='resetpassword' element={<ResetPassword />} />
+      <Route path='authmodal' element={<AuthModal/>} />
             
    </Route>
    )
