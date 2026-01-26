@@ -4,7 +4,7 @@ const SignUp = () => {
   return (
 <> 
 <div className='flex justify-center items-center  '>
-      <div className='w-full sm:w-[450px] absolute top-[45%] left-[47%] translate-y-[-50%] 
+      <div className='w-full sm:w-[450px] absolute top-[53%] left-[32%] translate-y-[-50%] 
                         flex justify-center items-center rounded-xl'>
         <div className='relative w-full h-full mx-auto flex items-center justify-center '>
             <div className='bg-gray-500 rounded-lg shadow relative w-full mx-6'>
