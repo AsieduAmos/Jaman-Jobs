@@ -8,7 +8,7 @@ import JobPage from './pages/JobPage'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import ResetPassword from './pages/ResetPassword'
-import AuthModal from './pages/AuthModal'
+
 
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
       <Route path='signup' element={<SignUp />} />
       <Route path='login' element={<Login />} />
       <Route path='resetpassword' element={<ResetPassword />} />
-      <Route path='authmodal' element={<AuthModal/>} />
+      
             
    </Route>
    )

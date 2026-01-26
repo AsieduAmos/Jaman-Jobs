@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   return (
@@ -19,7 +20,7 @@ const SignUp = () => {
                 </div>
   
     <form className='space-y-3 px-5 py-2 bg-gray-500 w-full h-130 rounded-b-xl'>
-         <h3 className='text-2xl font-bold text-white'>Register To find job</h3>
+         <h3 className='text-2xl font-bold text-white ml-20'>Create Account</h3>
       <div>
           <label className='block mb-2 text-lg font-medium text-white'>Full Name</label>
           <input className='w-full p-2 border border-red-300 bg-white 
@@ -60,25 +61,19 @@ const SignUp = () => {
            <button
              type='submit' className=' text-white hover:text-indigo-900 font-bold
              bg-gray-900 hover:bg-white rounded-md cursor-pointer
-             border-white px-15 py-2 mt-1 mb-2' >
+             border-white px-15 py-2 mt-4 mb-2' >
              Register
         </button>
        </div>
-        
-
-      <button 
-             className='flex justify-end w-full text-white hover:underline hover:text-white hover:font-bold'>
-           <a href='#' ></a>Forgot Password?
-      </button>
 
       <div className='text-slate-300 '>Already Have An Account?
-           <a href='#' className='hover:underline text-white text-sm font-bold hover:text-lg'> Log In</a>
+           <Link to='/login' className='hover:underline text-white text-sm font-bold hover:text-lg'> Log In</Link>
       </div>
     
     </form> 
-    </div>
-        </div>
-    </div>
+           </div>
+           </div>
+         </div>
 
      </div> 
     </>

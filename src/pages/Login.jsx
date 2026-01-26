@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -24,7 +24,7 @@ const Login = () => {
                 </div>
   
     <form className='space-y-5 px-5 py-10 bg-gray-500 w-full h-130'>
-         <h3 className='text-2xl font-bold text-white'>Sing In To find job</h3>
+         <h3 className='text-2xl font-bold text-white ml-20'>Log Into Find Job</h3>
      <div>
            <label className='block mb-2 text-lg font-medium text-white'>Email</label>
            <input className='w-full p-2 border border-red-300 bg-white 
@@ -59,13 +59,14 @@ const Login = () => {
         </div>
         
 
-     <button className='flex justify-end w-full text-white hover:underline hover:text-white hover:font-bold'>
-        <a href='' ></a>Forgot Password?
-    </button>
+    
+        <Link to='/resetpassword' className='flex justify-end w-full text-white hover:underline hover:text-white hover:font-bold' >
+            Forgot Password?</Link>
+    
 
      <div className='text-gray-900 '>Not Registered?
-        <a href='/SignUp' className='hover:underline text-white text-lg font-bold'
-        > Create Account</a>
+        <Link to='/SignUp' className='hover:underline text-white text-lg font-bold'
+        > Create Account</Link>
        
      </div>
     

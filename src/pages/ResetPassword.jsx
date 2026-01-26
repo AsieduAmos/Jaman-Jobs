@@ -19,7 +19,7 @@ const ResetPassword = () => {
                 </div>
   
     <form className='space-y-7 px-5 py-10 bg-gray-500 w-full h-130'>
-        <h3 className='text-xl font-bold text-white'>Reset Password</h3>
+        <h3 className='text-2xl font-bold text-white ml-20'>Reset Password</h3>
         <p className='text-white'>
               Forgot your password? Enter your E-mail address below. 
               we will send an email to help  you reset it.
