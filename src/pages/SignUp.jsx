@@ -3,6 +3,21 @@ import React from 'react'
 const SignUp = () => {
   return (
 <> 
+<div className='flex justify-center items-center  '>
+      <div className='w-full sm:w-[450px] absolute top-[45%] left-[47%] translate-y-[-50%] 
+                        flex justify-center items-center rounded-xl'>
+        <div className='relative w-full h-full mx-auto flex items-center justify-center '>
+            <div className='bg-gray-500 rounded-lg shadow relative w-full mx-6'>
+                <div className='flex justify-end p-2'>
+                    <button
+                    type='button'
+                    className='bg-transparent rounded-sm text-lg hover:font-bold p-1 ml-auto inline-flex items-center
+                     hover:bg-red-600 
+                    hover:text-white text-white'>
+                    X
+                </button>
+                </div>
+  
     <form className='space-y-3 px-5 py-2 bg-gray-500 w-full h-130 rounded-b-xl'>
          <h3 className='text-2xl font-bold text-white'>Register To find job</h3>
       <div>
@@ -61,6 +76,11 @@ const SignUp = () => {
       </div>
     
     </form> 
+    </div>
+        </div>
+    </div>
+
+     </div> 
     </>
   )
 }
