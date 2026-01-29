@@ -2,7 +2,7 @@ import React from 'react'
 import{ NavLink } from 'react-router-dom' 
 
 
-const FindAdd = () => {
+const HomePage = () => {
   return (
   <>
    
@@ -15,7 +15,7 @@ const FindAdd = () => {
           List available job vacancies to find a perfect employee.
           
         </p>
-        <NavLink to="/findadd" className='bg-indigo-700 w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
+        <NavLink to="/HomePage" className='bg-indigo-700 w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
                               cursor-pointer hover:bg-black hover:text-white 
                               transition duration-300 ease-in-out'>Add Job</NavLink>
       </div>
@@ -26,7 +26,7 @@ const FindAdd = () => {
             Looking for your next career opportunity?
           Find jobs that best fit your skills and aspirations.
         </p>
-        <NavLink to="/jobpage" className='bg-black w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
+        <NavLink to="/HomePage" className='bg-black w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
                               cursor-pointer hover:bg-indigo-700 hover:text-white 
                               transition duration-300 ease-in-out'>Find Job</NavLink>
       </div>
@@ -35,4 +35,4 @@ const FindAdd = () => {
   )
 }
 
-export default FindAdd
+export default HomePage

@@ -3,11 +3,11 @@ import Authpage from './pages/AuthPage'
 import { createBrowserRouter, createRoutesFromElements,
    Route, RouterProvider } from 'react-router-dom'
 import MainLayout from './layout/MainLayout'
-import FindAdd from './pages/FindAdd'
 import JobPage from './pages/JobPage'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import ResetPassword from './pages/ResetPassword'
+import HomePage from './pages/HomePage'
 
 
 
@@ -18,14 +18,12 @@ const App = () => {
    
     <Route path='/' element={<MainLayout />} >
       <Route index element={<Authpage />} />
-      <Route path='findadd' element={<FindAdd />} />
+      <Route path='homepage' element={<HomePage />} />
       <Route path='jobpage' element={<JobPage/>} />
       <Route path='signup' element={<SignUp />} />
       <Route path='login' element={<Login />} />
       <Route path='resetpassword' element={<ResetPassword />} />
-      
-            
-   </Route>
+    </Route>
    )
   )
 
