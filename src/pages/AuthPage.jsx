@@ -6,8 +6,8 @@ import findjob from '../images/findjob.png'
 const AuthPage = () => {
   return (
   <> 
-    <div className='flex items-center justify-center mt-15 pointer-events-none select-none'>
-        <img className='w-110' src={findjob} alt=" black young man looking on mobile phone" />
+    <div className='grid grid-cols-2 items-center justify-center pointer-events-none select-none'>
+        <img className='w-110 ml-70 mt-15' src={findjob} alt=" black young man looking on mobile phone" />
         <div>
           <h2 className='text-4xl text-indigo-900 font-bold mb-8'>
               Stay Home And <br />Find Job
@@ -16,7 +16,7 @@ const AuthPage = () => {
         </div>
     </div>
                
-    <div className='flex items-center justify-center mt-10 mb-30 pointer-events-none select-none'>
+    <div className='flex items-center justify-center mt-15 mb-15 pointer-events-none select-none'>
        <img className='w-18'src={FJ} alt="" />
     </div>
   </>
