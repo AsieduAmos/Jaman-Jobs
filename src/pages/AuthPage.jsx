@@ -1,11 +1,13 @@
 import React from 'react'
 import FJ from '../images/FJ.png'
 import findjob from '../images/findjob.png'
+import NavBar from '../components/NavBar'
 
 
 const AuthPage = () => {
   return (
   <> 
+     <NavBar />
     <div className='grid grid-cols-2 items-center justify-center pointer-events-none select-none'>
         <img className='w-110 ml-70 mt-15' src={findjob} alt=" black young man looking on mobile phone" />
         <div>

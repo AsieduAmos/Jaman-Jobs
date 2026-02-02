@@ -1,11 +1,12 @@
 import React from 'react'
 import FJ from '../images/FJ.png'
-import AuthModal from '../Modals/AuthModal'
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const NavBar = () => {
 
-  const[signIn, setSignin] = useState(false)
+  const navigate = useNavigate()
+ 
    
   return (
     <>
@@ -17,10 +18,11 @@ const NavBar = () => {
              <button className='bg-white w-30 text-indigo-900 font-bold text-2xl px-5 py-2 text-center rounded-lg
                               cursor-pointer hover:bg-indigo-900 hover:text-white 
                               transition duration-300 ease-in-out'
-              onClick={() => setSignin(true)}                 >
+                            onClick={() => navigate('/login')}
+                            >
                  Sign In
              </button>
-           {signIn && <AuthModal />}
+           
           </div>
          </nav>
          
