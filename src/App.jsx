@@ -10,6 +10,7 @@ import Login from './pages/Login'
 import ResetPassword from './pages/ResetPassword'
 import HomePage from './pages/HomePage'
 import AuthLayout from './layout/AuthLayout'
+import ModalLayout from './layout/ModalLayout'
 
 
 
@@ -17,16 +18,19 @@ const App = () => {
 
   const router = createBrowserRouter(
    createRoutesFromElements(
-     <Route path='/' element={<AuthLayout />} >
+    <Route path='/' element={<AuthLayout />} >
       <Route index element={<Authpage />} />
 
       <Route path='' element={<MainLayout />} >
-      <Route path='homepage' element={<HomePage />} />
-      <Route path='addjob' element={<AddJob />} />
-      <Route path='jobpage' element={<JobPage/>} />
-      <Route path='signup' element={<SignUp />} />
-      <Route path='login' element={<Login />} />
-      <Route path='resetpassword' element={<ResetPassword />} />
+        <Route path='homepage' element={<HomePage />} />
+        <Route path='addjob' element={<AddJob />} />
+        <Route path='jobpage' element={<JobPage/>} />
+       
+      </Route>
+      <Route path='' element={<ModalLayout />} >
+        <Route path='signup' element={<SignUp />} />
+        <Route path='login' element={<Login />} />
+        <Route path='resetpassword' element={<ResetPassword />} />
       </Route>
 
     </Route>
