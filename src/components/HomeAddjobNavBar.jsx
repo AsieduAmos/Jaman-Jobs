@@ -12,7 +12,7 @@ const HomeAddjobNavBar = () => {
           </div>
             
              
-             <NavLink to="/HomePage" className='bg-black  text-white font-bold text-xl ml-135 px-5 py-1 text-center rounded-md
+             <NavLink to="/Home" className='bg-black  text-white font-bold text-xl ml-135 px-5 py-1 text-center rounded-md
                               cursor-pointer hover:bg-indigo-900 hover:text-white transition duration-300 ease-in-out'>
                                 Home
                               </NavLink>

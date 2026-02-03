@@ -19,18 +19,18 @@ const App = () => {
   const router = createBrowserRouter(
    createRoutesFromElements(
     <Route path='/' element={<AuthLayout />} >
-      <Route index element={<Authpage />} />
+       <Route index element={<Authpage />} />
 
-      <Route path='' element={<MainLayout />} >
-        <Route path='homepage' element={<HomePage />} />
-        <Route path='addjob' element={<AddJob />} />
-        <Route path='jobpage' element={<JobPage/>} />
+       <Route path='' element={<MainLayout />} >
+         <Route path='home' element={<HomePage />} />
+         <Route path='addjob' element={<AddJob />} />
+         <Route path='jobpage' element={<JobPage/>} />
        
-      </Route>
-      <Route path='' element={<ModalLayout />} >
-        <Route path='signup' element={<SignUp />} />
-        <Route path='login' element={<Login />} />
-        <Route path='resetpassword' element={<ResetPassword />} />
+       </Route>
+       <Route path='' element={<ModalLayout />} >
+         <Route path='signup' element={<SignUp />} />
+         <Route path='login' element={<Login />} />
+         <Route path='resetpassword' element={<ResetPassword />} />
       </Route>
 
     </Route>
