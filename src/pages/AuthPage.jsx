@@ -8,9 +8,9 @@ const AuthPage = () => {
   return (
   <> 
      <NavBar />
-    <div className='grid grid-cols-2 items-center justify-center pointer-events-none select-none'>
-        <img className='w-110 ml-70 mt-15' src={findjob} alt=" black young man looking on mobile phone" />
-        <div>
+    <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 items-center justify-center pointer-events-none select-none'>
+        <img className='w-110 md:w-140 lg:ml-60 md:ml-60 ml-12 mt-15' src={findjob} alt=" black young man looking on mobile phone" />
+        <div className='px-10 mt-10 lg:mt-0 '>
           <h2 className='text-4xl text-indigo-900 font-bold mb-8'>
               Stay Home And <br />Find Job
            </h2>
