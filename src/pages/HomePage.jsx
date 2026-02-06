@@ -2,6 +2,7 @@ import React from 'react'
 import{ NavLink } from 'react-router-dom' 
 import AuthPage from './AuthPage'
 import Head from './Head'
+import Foot from '../components/Foot'
 
 
 const HomePage = () => {
@@ -9,7 +10,7 @@ const HomePage = () => {
   <>
    <Head />
    <AuthPage />
-  <div className='flex items-center justify-center mt-20'>
+  <div className='flex items-center justify-center my-15'>
     <div className='bg-gray-200 text-indigo-900 w-120 ml-12 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Employers</h2>
         <p className='font-normal text-md pb-5'> 
@@ -33,6 +34,7 @@ const HomePage = () => {
                               transition duration-300 ease-in-out'>Find Job</NavLink>
       </div>
      </div> 
+     <Foot />
   </>
   )
 }
