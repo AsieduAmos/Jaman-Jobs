@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const HomeAddjobNavBar = () => {
   return (
     <>
-    <div className="flex h-20 items-center border-b border-indigo-900 ">
+    <div className="flex h-20 items-center border-b border-indigo-900 shadow-lg">
           <div className='flex'>
             <div className='pointer-events-none select-none ml-60'><img className='w-16' src={FJ} alt="" /></div>
             <div className='font-extrabold italic text-xl ml-1 mt-3 text-indigo-800'>Find Job</div> 
