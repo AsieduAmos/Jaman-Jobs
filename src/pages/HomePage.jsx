@@ -10,26 +10,26 @@ const HomePage = () => {
   <>
    <Head />
    <AuthPage />
-  <div className='flex items-center justify-center my-15'>
-    <div className='bg-gray-200 text-indigo-900 w-120 ml-12 p-5 shadow-md rounded-lg'>
+  <div className='flex flex-col md:flex-row items-center justify-center my-15 gap-10 '>
+    <div className='bg-gray-200 text-indigo-900 w-120 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Employers</h2>
         <p className='font-normal text-md pb-5'> 
           Our platform makes it easy to find the perfect fit for your team.
           List available job vacancies to find a perfect employee.
           
         </p>
-        <NavLink to="/HomePage" className='bg-indigo-700 w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
+        <NavLink to="/HomePage" className='bg-indigo-700 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
                               cursor-pointer hover:bg-black hover:text-white 
                               transition duration-300 ease-in-out'>Add Job</NavLink>
       </div>
 
-     <div className='bg-gray-100 text-indigo-900 w-120 ml-8 p-5 shadow-md rounded-lg'>
+     <div className='bg-gray-100 text-indigo-900 w-120 p-5 shadow-md rounded-lg'>
         <h2 className='font-bold text-xl py-3 '>For Job Seekers</h2>
         <p className='font-normal text-md pb-5'> 
             Looking for your next career opportunity?
           Find jobs that best fit your skills and aspirations.
         </p>
-        <NavLink to="/HomePage" className='bg-black w-30 text-white font-medium text-xl px-3 py-1 text-center rounded-xl
+        <NavLink to="/HomePage" className='bg-black text-white font-medium text-xl px-3 py-1 text-center rounded-xl
                               cursor-pointer hover:bg-indigo-700 hover:text-white 
                               transition duration-300 ease-in-out'>Find Job</NavLink>
       </div>

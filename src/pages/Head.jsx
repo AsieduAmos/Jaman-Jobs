@@ -3,13 +3,9 @@ import React from 'react'
 const Head = () => {
   return (
     <>
-    <div className='bg-indigo-500 text-white py-8 text-center mt-6 '>
-        <h3 className='text-3xl '> Your Gateway to Exciting Job Opportunities.</h3>
-        <h4 className='text-2xl my-2'>And Aslo,</h4>
-        <p className='text-2xl '> 
-             The perfect Platform  to find the perfect employee by listing 
-              <br />the job vacancies in your company or organization.
-        </p>
+    <div className='lg:text-2xl md:text-5xl text-7xl lg:font-thin md:font-light font-light bg-indigo-500 text-white lg:py-8 py-15 text-center mt-6 lg:w-full w-6xl px-8'>
+        <p className=' '> Your Gateway to Exciting Job Opportunities And Aslo,The perfect Platform  to find the perfect employee by listing 
+              the job vacancies in your company or organization.</p>
 
     </div>
     </>
