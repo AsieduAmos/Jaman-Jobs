@@ -11,9 +11,9 @@ const HomePage = () => {
    <Head />
    <AuthPage />
   <div className='flex lg:flex-row flex-col items-center justify-center lg:mx-10 lg:my-4 my-15 lg:gap-6 gap-10  '>
-    <div className='bg-gray-200 text-indigo-900 lg:w-3xl md:w-5xl w-5xl lg:py-2 py-20 lg:px-3 px-15 lg:ml-1 md:ml-90 ml-180 lg:mt-10 shadow-md lg:rounded-lg rounded-4xl'>
+    <div className='bg-gray-200 text-indigo-900 lg:w-3xl md:w-5xl w-5xl lg:py-5 py-20 lg:px-5 px-15 lg:ml-1 md:ml-90 ml-180 lg:mt-10 shadow-md lg:rounded-lg rounded-4xl'>
         <h2 className='lg:font-bold font-extrabold lg:text-2xl md:text-5xl text-7xl py-2 '>For Employers</h2>
-        <p className='lg:font-normal font-light lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-2 my-6'> 
+        <p className='lg:font-normal font-light lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-3 my-6'> 
           Our platform makes it easy to find the perfect fit for your team.
           List available job vacancies to find a perfect employee.
           
@@ -23,9 +23,9 @@ const HomePage = () => {
            hover:text-white transition duration-300 ease-in-out'>Add Job</NavLink>
       </div>
 
-     <div className='bg-gray-100 text-indigo-900 lg:w-3xl md:w-5xl w-5xl lg:py-2 py-20 lg:px-3 px-15 lg:ml-1 md:ml-90 ml-180 mt-10 shadow-md lg:rounded-lg rounded-4xl'>
+     <div className='bg-gray-100 text-indigo-900 lg:w-3xl md:w-5xl w-5xl lg:py-5 py-20 lg:px-5 px-15 lg:ml-1 md:ml-90 ml-180 mt-10 shadow-md lg:rounded-lg rounded-4xl'>
         <h2 className='lg:font-bold font-semibold lg:text-2xl md:text-5xl text-7xl py-2 '>For Job Seekers</h2>
-        <p className='lg:font-normal font-light lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-2 my-6'> 
+        <p className='lg:font-normal font-light lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-3 my-6'> 
             Looking for your next career opportunity?
           Find jobs that best fit your skills and aspirations.
         </p>
