@@ -7,8 +7,8 @@ const JobPage = () => {
     
     <div className='bg-slate-100 font-bold text-3xl text-center text-indigo-800 p-4 mx-50 rounded-md mt-5'>Browse Jobs</div>
      <div className='w-90 px-5 py-5 rounded-md shadow-lg mt-10 ml-10'>
-      <h4 className='font-thin'>Full Time</h4>
       <h2 className='text-2xl font-bold mb-5'>Store Keeper</h2>
+      <h4 className='font-thin mb-3'>Full Time</h4>
       <p className='mb-3 font-medium'>Looking for a dedicated store keeper to manage inventory and maintain store cleanliness.
       Responsibilities include receiving shipments, organizing stock, and assisting customers.
       </p>

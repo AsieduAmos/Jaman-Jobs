@@ -18,7 +18,7 @@ const HomePage = () => {
           List available job vacancies to find a perfect employee.
           
         </p>
-        <NavLink to="/HomePage" className='bg-indigo-700 text-white lg:font-normal font-medium lg:text-lg md:text-4xl text-6xl 
+        <NavLink to="/Addjob" className='bg-indigo-700 text-white lg:font-normal font-medium lg:text-lg md:text-4xl text-6xl 
            lg:px-4 px-15 lg:py-1 md:py-4 py-5 text-center rounded-lg cursor-pointer hover:bg-black
            hover:text-white transition duration-300 ease-in-out'>Add Job</NavLink>
       </div>
@@ -29,7 +29,7 @@ const HomePage = () => {
             Looking for your next career opportunity?
           Find jobs that best fit your skills and aspirations.
         </p>
-        <NavLink to="/HomePage" className='bg-black text-white lg:font-normal font-medium lg:text-lg md:text-4xl text-6xl 
+        <NavLink to="/jobpage" className='bg-black text-white lg:font-normal font-medium lg:text-lg md:text-4xl text-6xl 
         lg:px-4 px-15 lg:py-1 md:py-4 py-5 text-center rounded-lg cursor-pointer hover:bg-indigo-700 
         hover:text-white transition duration-300 ease-in-out'>Find Job</NavLink>
       </div>

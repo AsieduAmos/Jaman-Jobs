@@ -1,0 +1,106 @@
+{
+   "jobs": [
+    {
+      "id": "1",
+      "title": "Store Keeper",
+      "type": "Full-Time",
+      "description": "Looking for a dedicated store keeper to
+        manage inventory and maintain store cleanliness.
+        Responsibilities include receiving shipments, 
+        organizing stock, and assisting customers.",
+        "location": "Drobo-Magazine",
+        "salary":  "$ 1K-2K",
+        "company":{
+            "name": "In Jesue Name Enterprise",
+            "email": "InJesueNameEnterprise@gmail.com",
+            "phone": "1234567890"
+        }
+
+    },
+    
+    {
+      "id": "2",
+      "title": "Loading Boy",
+      "type": "Part-Time",
+      "description": "Looking for an energetic person to off-load 
+        construction materials(cement, iron rod, roofing sheet etc)
+         anytime the truck arrived with the materials.",
+        "location": "Japekrom-Station",
+        "salary":  "$ 2K-3K",
+        "company":{
+            "name": "God's Time Construction LMTD",
+            "email": "GodTimeConstruction@gmail.com",
+            "phone": "0987654321"
+        }
+
+    },
+
+    {
+      "id": "3",
+      "title": "Fuel Atendant",
+      "type": "Full-Time",
+      "description": "Looking for a person who is willing to
+       work at filling station to service costomers in a 
+       respectful manner.",
+        "location": "Drobo",
+        "salary":  "$ 1K-2K",
+        "company":{
+            "name": "Shell",
+            "email": "shellInJesueNameEnterprise@gmail.com",
+            "phone": "0134567890"
+        }
+
+    },
+
+    {
+      "id": "4",
+      "title": "Carpenter",
+      "type": "Full-Time",
+      "description": "Looking for someone to be cuting
+       logs and boards using powered machinery will also 
+        be carpentry works.",
+        "location": "Drobo-Beside High way Pub",
+        "salary":  "$ 2K-3K",
+        "company":{
+            "name": "Agya Sei Sawmill",
+            "email": "AgyaSeiSawmill@gmail.com",
+            "phone": "004567890"
+        }
+
+    },
+
+     {
+      "id": "5",
+      "title": "Store Keeper",
+      "type": "Full-Time",
+      "description": "Looking for a dedicated store keeper to
+        manage inventory and maintain store cleanliness.
+        Responsibilities include receiving shipments, 
+        organizing stock, and assisting customers.",
+        "location": "Japekrom-Magazine",
+        "salary":  "$ 1K-2K",
+        "company":{
+            "name": "Amos Enterprise",
+            "email":"Amos@gmail.com",
+            "phone": "324567890"
+        }
+
+    },
+
+     {
+      "id": "6",
+      "title": "Teacher",
+      "type": "Part-Time",
+      "description": "Looking for a profesional french teacher to teach during 
+          your own free time ",
+        "location": "Drobo",
+        "salary":  "$ 1K-2K",
+        "company":{
+            "name": "Trinity Preparatory School",
+            "email": "Trinty@gmail.com",
+            "phone": "0004567890"
+        }
+
+    }
+   ]
+}
