@@ -1,11 +1,11 @@
 import React from 'react'
-import HomeAddjobNavBar from '../components/HomeAddjobNavBar'
 import { Outlet } from 'react-router-dom'
+import NaviBar from '../components/NaviBar'
 
 const MainLayout = () => {
   return (
     <>
-      <HomeAddjobNavBar />
+      <NaviBar />
       <Outlet />  
     </>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import FJ from '../images/FJ.png'
 import { NavLink } from 'react-router-dom'  
 
-const HomeAddjobNavBar = () => {
+const NaviBar = () => {
   return (
     <>
     <div className="flex lg:h-20 md:h-50 h-60 lg:w-full w-6xl items-center border-t border-b border-indigo-600 shadow-lg">
@@ -37,4 +37,4 @@ const HomeAddjobNavBar = () => {
   )
 }
 
-export default HomeAddjobNavBar
+export default NaviBar
