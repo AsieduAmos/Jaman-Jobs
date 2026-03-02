@@ -1,5 +1,5 @@
 import React from 'react'
-import Foot from '../components/Foot'
+
 
 const AddJob = () => {
   return (
@@ -139,7 +139,7 @@ const AddJob = () => {
            </form>
         </div>
       </div>
-       <Foot />
+      
    </section>
    
     </>

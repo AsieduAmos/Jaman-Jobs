@@ -2,7 +2,7 @@ import React from 'react'
 import{ NavLink } from 'react-router-dom' 
 import AuthPage from './AuthPage'
 import Head from './Head'
-import Foot from '../components/Foot'
+
 
 
 const HomePage = () => {
@@ -34,7 +34,7 @@ const HomePage = () => {
         hover:text-white transition duration-300 ease-in-out'>Find Job</NavLink>
       </div>
      </div> 
-     <Foot />
+     
   </>
   )
 }
