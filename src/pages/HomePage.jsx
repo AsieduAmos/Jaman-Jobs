@@ -10,7 +10,7 @@ const HomePage = () => {
   <>
    <Head />
    <AuthPage />
-  <div className='flex lg:flex-row flex-col items-center justify-center lg:mx-10 lg:my-4 my-15 lg:gap-6 gap-10  '>
+  <div className='flex lg:flex-row flex-col items-center justify-center lg:mx-10 lg:gap-6 gap-10  '>
     <div className='bg-gray-200 text-indigo-900 lg:w-3xl md:w-5xl w-5xl lg:py-5 py-20 lg:px-5 px-15 lg:ml-1 md:ml-90 ml-180 lg:mt-10 shadow-md lg:rounded-lg rounded-4xl'>
         <h2 className='lg:font-bold font-extrabold lg:text-2xl md:text-5xl text-7xl py-2 '>For Employers</h2>
         <p className='lg:font-normal font-light lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-3 my-6'> 

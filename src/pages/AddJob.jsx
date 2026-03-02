@@ -5,8 +5,8 @@ const AddJob = () => {
   return (
     <>
     <section className='bg-gray-50'> 
-      <div className='container m-auto max-w-xl py-15'>
-        <div className='bg-white px-10 py-8 mb-4 shadow-xl rounded-xl  m-2 md:m-0'> 
+      <div className='container m-auto max-w-xl pt-15'>
+        <div className='bg-white px-10 py-8 mb-4 shadow-xl rounded-t-xl  m-2 md:m-0'> 
            <form >
              <h3 className='text-2xl text-center text-gray-900 font-bold mb-6'>Add New Job</h3>
              
