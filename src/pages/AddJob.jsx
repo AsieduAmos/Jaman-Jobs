@@ -1,13 +1,15 @@
 import React from 'react'
+import Foot from '../components/Foot'
 
 const AddJob = () => {
   return (
     <>
-    <section> 
-      <div className='container m-auto max-w-2xl py-24'>
-        <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0'> 
+    <section className='bg-gray-50'> 
+      <div className='container m-auto max-w-xl py-15'>
+        <div className='bg-white px-10 py-8 mb-4 shadow-xl rounded-xl  m-2 md:m-0'> 
            <form >
-             <h3 className='text-2xl text-center font-semibold mb-5'>Add New Job</h3>
+             <h3 className='text-2xl text-center text-gray-900 font-bold mb-6'>Add New Job</h3>
+             
               <div className='mb-4'>
                 <label htmlFor="type"
                 className='block text-gray-700 font-bold mb-2'>
@@ -61,6 +63,7 @@ const AddJob = () => {
                     <option value="GH 1,000 - GH 2,0000">GH 1,000 - GH 2,000</option>
                     <option value="GH 2,000 - GH 4,000">GH 2,000 - GH 4,000</option>
                     <option value="GH 4,000 - GH 6,000">GH 4,000 - GH 6,000</option>
+                    <option value="GH 7,000 - GH 9,000">GH 4,000 - GH 6,000</option>
                     <option value="Negotiable">Negotiable</option>
                   </select>
                 
@@ -77,7 +80,7 @@ const AddJob = () => {
                  required
                 />
               </div>
-              <h2 className='text-2xl mb-4 text-center'>Company Details</h2>
+              <h2 className='text-xl font-semibold text-gray-900 mb-4 text-center'>Company Details</h2>
 
               <div className='mb-4'>
                 <label 
@@ -125,17 +128,20 @@ const AddJob = () => {
                  required
                 />
               </div>
+
               <button type='submit' 
               className='
-               bg-indigo-600 text-white
+               bg-indigo-700 text-white font-bold
                px-30 rounded-md
-               hover:bg-indigo-800 mx-4 py-2 w-full'>
+               hover:bg-indigo-800 mx-20 mt-4 py-3'>
                 Add Job
                </button>
            </form>
         </div>
       </div>
+       <Foot />
    </section>
+   
     </>
   )
 }
