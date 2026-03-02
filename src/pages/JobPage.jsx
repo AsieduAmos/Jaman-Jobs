@@ -31,7 +31,7 @@ const JobPage = () => {
 
         <div className='shadow-2xl py-5 px-4 rounded-lg mb-5'>
           <h1 className='text-red-600 mb-3 ml-2 '>{job.location}</h1>
-          <button className='text-white px-30 py-3 py-2 mx-6 rounded-md bg-indigo-900 hover:bg-gray-900 
+          <button className='text-white px-30 py-3 py-2 mx-6 rounded-md bg-indigo-700 hover:bg-gray-700 
            text-md font-semibold '>
             Apply</button>
         </div>
