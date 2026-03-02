@@ -4,7 +4,7 @@ import React from 'react'
 const AddJob = () => {
   return (
     <>
-    <section className='bg-gray-50'> 
+    <section className='bg-slate-100'> 
       <div className='container m-auto max-w-xl pt-15'>
         <div className='bg-white px-10 py-8 mb-4 shadow-xl rounded-t-xl  m-2 md:m-0'> 
            <form >
