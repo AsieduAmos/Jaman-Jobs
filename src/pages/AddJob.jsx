@@ -131,9 +131,9 @@ const AddJob = () => {
 
               <button type='submit' 
               className='
-               bg-indigo-700 text-white font-bold
+               bg-black text-white font-bold
                px-30 rounded-md
-               hover:bg-indigo-800 mx-20 mt-4 py-3'>
+               hover:bg-gray-800 mx-20 mt-4 py-3'>
                 Add Job
                </button>
            </form>
