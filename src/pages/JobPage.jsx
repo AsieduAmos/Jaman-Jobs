@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react'
 import React from 'react'
+import { FaMapMarker } from 'react-icons/fa'
  
 
 const JobPage = () => {
@@ -16,6 +17,8 @@ const JobPage = () => {
      fetchJobs();
    }, []);
 
+  
+
   return (
    <>
     
@@ -30,7 +33,10 @@ const JobPage = () => {
       <p className='font-thin text-gray-500 mb-4'>{job.salary}</p>
 
         <div className='shadow-2xl py-5 px-4 mb-5 border-t border-gray-400'>
-          <h1 className='text-red-700 mb-3 ml-2 '>{job.location}</h1>
+            <div className='text-red-700 mb-3 ml-1 '>
+              <FaMapMarker className='inline text-sm mr-1' />
+            {job.location}
+            </div>
           <button className='text-white px-30 py-3 py-2 mx-6 rounded-md bg-gray-900 hover:bg-gray-700 
            text-md font-semibold '>
             Apply</button>
