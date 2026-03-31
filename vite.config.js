@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+
    proxy: {
     '/api': {
       target: 'http://localhost:7000',

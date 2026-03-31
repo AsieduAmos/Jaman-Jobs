@@ -12,6 +12,7 @@ import HomePage from './pages/HomePage'
 import AuthLayout from './layout/AuthLayout'
 import ModalLayout from './layout/ModalLayout'
 import PageNotFound from './pages/PageNotFound'
+import JobDetails, {jobLoader} from './pages/JobDetails'
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
          <Route index element={<HomePage />} />
          <Route path='addjob' element={<AddJob />} />
          <Route path='jobpage' element={<JobPage/>} />
+         <Route path='jobpage/:id' element={<JobDetails/>} loader={jobLoader}  />
          <Route path='*' element={<PageNotFound />} />
        
        <Route path='' element={<ModalLayout />} >
