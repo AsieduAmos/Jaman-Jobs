@@ -30,8 +30,8 @@ const JobDetails = () => {
                 <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
                     <div className='mb-4 font-thin text-gray-500'>{job.type}</div>
                     <h1 className='text-2xl text-gray-700 font-bold mb-4'>{job.title}</h1>
-                    <div className='text-gray-500 mb-4 flex align middle justify-center md:justify-start'>
-                     <FaMapMarker className=' text-orange-700 mr-1' />
+                    <div className='mb-3 flex align middle justify-center md:justify-start'>
+                     <FaMapMarker className=' text-red-700 mr-1' />
                      <p className='text-orange-700'>{job.location}</p>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ const JobDetails = () => {
             <aside>
                 <div className='bg-white p-6 rounded-lg shadow-md '>
                     <h3 className='text-2xl text-gray-700 font-bold mb-4'>Company Information</h3>
-                    <h2 className='mb-4'>{job.company.name}</h2>
-                    <p className='my-2'>{job.company.description}</p>
+                    <h2 className='mb-3 text-gray-700 font-bold'>{job.company.name}</h2>
+                    <p className='mb-3 text-gray-600 font-semibold'>{job.company.description}</p>
                     <hr className='my-4' />
                     <h3 className='text-2xl text-gray-700 font-bold'>Contact Email</h3>
                     <p className=' my-2 bg-gray-300 font-bold p-2'>{job.company.email}</p>
@@ -60,15 +60,15 @@ const JobDetails = () => {
                     <p className='bg-gray-300 p-2 font-bold'>{job.company.phone}</p>
                 </div>
 
-                <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+                <div className='bg-white p-5 rounded-lg shadow-md mt-6'>
                     <h3 className='text-2xl text-gray-700 font-bold mb-6 ml-50'>Manage Job</h3>
                     <Link
-                    to={`/addjob/edit/${job.id}`} className='bg-indigo-600 hover:bg-indigo-700
-                     text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none
+                    to={`/addjob/edit/${job.id}`} className='bg-gray-800 hover:bg-gray-900
+                     text-white text-center font-bold py-2 px-4 rounded-lg w-full focus:outline-none
                       focus:shadow-outline mt-6 block'>
                         Edit Job
                     </Link>
-                    <button className='bg-red-500 text-white font-bold py-2 px-4 rounded-full w-full
+                    <button className='bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-lg w-full
                      focus:outline-none focus:shadow-outline mt-4 block'>
                         Delete Job
                     </button>
