@@ -29,7 +29,7 @@ return (
         {jobs.map((job) => (
             <div key={job.id} className=' px-5 pt-5 rounded-md shadow-lg bg-white' > 
                <h2 className='text-2xl text-gray-700 font-bold mb-5'>{job.title}</h2>
-               <h4 className='font-thin  text-gray-500 mb-3'>{job.type}</h4>
+               <h4 className='font-thin text-gray-500 mb-3'>{job.type}</h4>
                <p className='mb-3 text-gray-700 font-semibold'>{job.description.slice(0, 80)}...</p>
                <p className='font-thin text-gray-500 mb-4'>{job.salary}</p>
 

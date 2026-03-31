@@ -12,68 +12,74 @@ const JobDetails = () => {
   return (
     <>
     <section>
-        <div className='container m-auto py-6 px-6'>
-         <Link className='text-gray-700 hover:text-gray-900 flex items-center' 
+        <div className='py-6 font-bold text-center text-white mt-3 bg-gray-600'>
+         <Link 
            to='/jobpage'
+           className=' flex items-center ml-140 text-lg ' 
            >
-             <FaArrowLeft className='mr-2' />
+             <FaArrowLeft className='mr-1 text-lg' />
              Back to Browse Jobs
           </Link>
         </div>
     </section>
     
     <section className='bg-indigo-50'>
-        <div className='container m-auto py-6 px-6'>  
-            <div className='grid grid-cols-1 md:grid-cols-70/30 w-full gap-6'>
+        <div className='container m-auto py-6 px-4'>  
+            <div className='grid grid-cols-2 md:grid-cols-70/30 w-full gap-6'>
             <main>
                 <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
-                    <div className='text-gray-500 mb-4'>{job.type}</div>
-                    <h1 className='text-3xl font-bold mb-4'>{job.title}</h1>
+                    <div className='mb-4 font-thin text-gray-500'>{job.type}</div>
+                    <h1 className='text-2xl text-gray-700 font-bold mb-4'>{job.title}</h1>
                     <div className='text-gray-500 mb-4 flex align middle justify-center md:justify-start'>
-                     <FaMapMarker className=' text-orange-700 mr-2' />
+                     <FaMapMarker className=' text-orange-700 mr-1' />
                      <p className='text-orange-700'>{job.location}</p>
                     </div>
-
                 </div>
-                <div>
-                    <h2 className='text-2xl font-bold mb-4 mt-6'>Job Description</h2>
-                    <p className='mb-4'>
+
+                <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+                    <h3 className='text-2xl text-gray-700 font-bold mb-4 mt-6'>Job Description</h3>
+                    <p className='mb-3 text-gray-600 font-semibold'>
                         {job.description}
                     </p>
-                    <h3 className='text-indigo-800 text-lg font-bold mb-2'>
-                        salary
+                    <h3 className='text-2xl text-gray-700 font-bold mb-2'>
+                        Salary
                     </h3>
                     <p className='text-gray-700 mb-4'>{job.salary}</p>
                 </div>
             </main>
-            <section>
-                <div className='bg-white p-6 rounded-lg shadow-md '>
 
-                    <h3 className='text-2xl font-bold mb-4'>Company Information</h3>
+            <aside>
+                <div className='bg-white p-6 rounded-lg shadow-md '>
+                    <h3 className='text-2xl text-gray-700 font-bold mb-4'>Company Information</h3>
                     <h2 className='mb-4'>{job.company.name}</h2>
-                    <p className='mb-4'>{job.company.description}</p>
+                    <p className='my-2'>{job.company.description}</p>
                     <hr className='my-4' />
-                    <h3 className='text-2xl font-bold mb-4'>Contact Email</h3>
-                    <p className='text-gray-700 mb-4 p-2'>{job.company.email}</p>
-                    <h3 className='text-2xl font-bold mb-4'>Contact Phone</h3>
-                    <p className='text-gray-700 mb-4 p-2 font-bold'>{job.company.phone}</p>
+                    <h3 className='text-2xl text-gray-700 font-bold'>Contact Email</h3>
+                    <p className=' my-2 bg-gray-300 font-bold p-2'>{job.company.email}</p>
+                    <h3 className='text-2xl text-gray-700 font-bold'>Contact Phone</h3>
+                    <p className='bg-gray-300 p-2 font-bold'>{job.company.phone}</p>
                 </div>
 
-                <div>
+                <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
+                    <h3 className='text-2xl text-gray-700 font-bold mb-6 ml-50'>Manage Job</h3>
                     <Link
-                    to='/addjob' className='bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none mt-6 block'>
-                        edit Job
+                    to={`/addjob/edit/${job.id}`} className='bg-indigo-600 hover:bg-indigo-700
+                     text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none
+                      focus:shadow-outline mt-6 block'>
+                        Edit Job
                     </Link>
-                    <button className='bg-red-500 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none mt-4 block'>
+                    <button className='bg-red-500 text-white font-bold py-2 px-4 rounded-full w-full
+                     focus:outline-none focus:shadow-outline mt-4 block'>
                         Delete Job
                     </button>
                 </div>
-            </section>
+            </aside>
 
             </div>
         </div>
 
     </section>
+   
     </>
   )
 }
