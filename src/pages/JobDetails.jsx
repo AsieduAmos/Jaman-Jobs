@@ -79,7 +79,17 @@ const JobDetails = () => {
         </div>
 
     </section>
-   
+    <section>
+        <div className='py-6 font-bold text-center text-white mb-6 bg-gray-600'>
+         <Link 
+           to='/jobpage'
+           className=' flex items-center ml-140 text-lg ' 
+           >
+             <FaArrowLeft className='mr-1 text-lg' />
+             Back to Browse Jobs
+          </Link>
+        </div>
+    </section>
     </>
   )
 }
