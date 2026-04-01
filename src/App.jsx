@@ -18,15 +18,15 @@ import JobDetails, {jobLoader} from './pages/JobDetails'
 
 const App = () => {
 
-  const addJob = async (addNewJob) => {
-    const res = await fetch('http://localhost:5000/jobs', {
+  const addJob = async (newJob) => {
+    const res = await fetch('http://localhost:7000/jobs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(addNewJob)
+      body: JSON.stringify(newJob)
       
-    })
+    });
     return;
   };
       

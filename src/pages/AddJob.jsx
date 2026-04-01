@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 
 const AddJob = ({submitJob}) => {
 
+const [title, setTitle] = useState('')
   const [type, setType] = useState('Full-Time')
-  const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [salary, setSalary] = useState('GH 1,000 - GH 2,0000')  
   const [location, setLocation] = useState('')
@@ -19,23 +19,25 @@ const AddJob = ({submitJob}) => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    const addNewJob = {
-      type,
-      title,
-      description, 
-      salary,
-      location,
-      company: {
-        name: companyName,
-        description: companyDescription,
-        email,
-        phone
-      }
-    }
-    submitJob(addNewJob);
+
+   const newJob = {
+    title,
+    type,
+    description,  
+    location,
+    salary,
+    compay:{
+      name: companyName,
+      description: companyDescription,
+      email,
+      phone,
+    },
+   };
+    submitJob(newJob);
 
     return navigate('/jobpage');
   };
+  
   return (
     <>
     <section className='bg-slate-100'> 
@@ -85,7 +87,7 @@ const AddJob = ({submitJob}) => {
                  id='description'
                  name='description'
                  className='border rounded w-full py-2 px-3 mb-2'
-                 placeholder='eg. We are looking for a store keeper to manage inventory and ensure smooth operations.'
+                 placeholder='eg. We are looking for someone to manage inventory and ensure smooth operations.'
                  required
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
@@ -103,7 +105,7 @@ const AddJob = ({submitJob}) => {
                      value={salary}
                   onChange={(e) => setSalary(e.target.value)}
                    
-                    <option value="GH 1,000 - GH 2,0000">GH 1,000 - GH 2,000</option>
+                    <option value="GH 1,000 - GH 2,000">GH 1,000 - GH 2,000</option>
                     <option value="GH 2,000 - GH 4,000">GH 2,000 - GH 4,000</option>
                     <option value="GH 4,000 - GH 6,000">GH 4,000 - GH 6,000</option>
                     <option value="GH 7,000 - GH 9,000">GH 4,000 - GH 6,000</option>
