@@ -18,13 +18,26 @@ import JobDetails, {jobLoader} from './pages/JobDetails'
 
 const App = () => {
 
+  const addJob = async (addNewJob) => {
+    const res = await fetch('http://localhost:5000/jobs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(addNewJob)
+      
+    })
+    return;
+  };
+      
+
   const router = createBrowserRouter(
    createRoutesFromElements(
     
 
     <Route path='/' element={<MainLayout />} >
          <Route index element={<HomePage />} />
-         <Route path='addjob' element={<AddJob />} />
+         <Route path='addjob' element={<AddJob submitJob={addJob}/>} />
          <Route path='jobpage' element={<JobPage/>} />
          <Route path='jobpage/:id' element={<JobDetails/>} loader={jobLoader}  />
          <Route path='*' element={<PageNotFound />} />

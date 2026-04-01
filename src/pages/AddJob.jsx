@@ -1,13 +1,47 @@
 import React from 'react'
+import { useState } from 'react' 
+import { useNavigate } from 'react-router-dom'
 
 
-const AddJob = () => {
+const AddJob = ({submitJob}) => {
+
+  const [type, setType] = useState('Full-Time')
+  const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+  const [salary, setSalary] = useState('GH 1,000 - GH 2,0000')  
+  const [location, setLocation] = useState('')
+  const [companyName, setCompanyName] = useState('')
+  const [companyDescription, setCompanyDescription] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+
+  const navigate = useNavigate();
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const addNewJob = {
+      type,
+      title,
+      description, 
+      salary,
+      location,
+      company: {
+        name: companyName,
+        description: companyDescription,
+        email,
+        phone
+      }
+    }
+    submitJob(addNewJob);
+
+    return navigate('/jobpage');
+  };
   return (
     <>
     <section className='bg-slate-100'> 
       <div className='container m-auto max-w-xl pt-15'>
-        <div className='bg-white px-10 py-8 mb-4 shadow-xl rounded-t-xl  m-2 md:m-0'> 
-           <form >
+        <div className='bg-white p-10 mb-4 shadow-xl rounded-t-xl'> 
+           <form onSubmit={formSubmit}>
              <h3 className='text-2xl text-center text-gray-900 font-bold mb-6'>Add New Job</h3>
              
               <div className='mb-4'>
@@ -20,6 +54,8 @@ const AddJob = () => {
                  name="type" 
                  className='border rounded w-full py-2 px-3'
                  required
+                 value={type}
+                  onChange={(e) => setType(e.target.value)}
                  >
                     <option value="Full-Time">Full-Time</option>
                     <option value="Part-Time">Part-Time</option>
@@ -38,6 +74,8 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. Store Keeper'
                  required
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
                 />
               </div>
 
@@ -49,8 +87,11 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. We are looking for a store keeper to manage inventory and ensure smooth operations.'
                  required
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
                 />
               </div>
+
               <div className='mb-4'>
                 <label htmlFor="type"
                  className='block text-gray-700 font-bold mb-2'>
@@ -59,6 +100,8 @@ const AddJob = () => {
                   <select name="salary" id="salary"
                    className='border rounded w-full py-2 px-3'
                    required>
+                     value={salary}
+                  onChange={(e) => setSalary(e.target.value)}
                    
                     <option value="GH 1,000 - GH 2,0000">GH 1,000 - GH 2,000</option>
                     <option value="GH 2,000 - GH 4,000">GH 2,000 - GH 4,000</option>
@@ -78,6 +121,8 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. Drobo'
                  required
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
               <h2 className='text-xl font-semibold text-gray-900 mb-4 text-center'>Company Details</h2>
@@ -85,7 +130,7 @@ const AddJob = () => {
               <div className='mb-4'>
                 <label 
                 className='block text-gray-700 font-bold mb-2'>
-                  Company Name 
+                  Shop Company Name 
                 </label>
                 <input
                  type="text"
@@ -94,6 +139,21 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. ABC Company'
                  required
+                  value={companyName}
+                  onChange={(e) => setCompanyName(e.target.value)}
+                />
+              </div>
+
+              <div className='mb-4'>
+                <label className='block text-gray-700 font-bold mb-2'>Shop or Company Description </label>
+                <textarea
+                 id='description'
+                 name='description'
+                 className='border rounded w-full py-2 px-3 mb-2'
+                 placeholder='What do you do at your Shop or Company?'
+                 required
+                  value={companyDescription}
+                  onChange={(e) => setCompanyDescription(e.target.value)}
                 />
               </div>
 
@@ -110,6 +170,8 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. company@example.com'
                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               
@@ -126,6 +188,8 @@ const AddJob = () => {
                  className='border rounded w-full py-2 px-3 mb-2'
                  placeholder='eg. +233 123 456 789'
                  required
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
 
