@@ -16,16 +16,18 @@ const HomePage = () => {
 
      </div>
 
-     <div className='grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 items-center justify-center
-              pointer-events-none select-none lg:mt-20 mt-15 mb-15'>
-           <img className='lg:w-120 w-200 lg:ml-60 md:ml-40 ml-10' src={findjob} 
+     
+
+     <div className='grid lg:grid-cols-2 grid-cols-1 items-center
+              pointer-events-none select-none lg:mt-12 mt-15 mb-10'>
+           <img className='ml-100 lg:ml-50 w-100' src={findjob} 
              alt=" black young man looking on mobile phone" />
-           <div className=''>
-             <h2 className='text-3xl text-gray-900 font-bold mb-8'>
-                 Stay Home And Find<br /> Job
-              </h2>
-               <p className='text-xl font-semibold text-gray-800'>Find Job With No Stress With Just A <br />Click
-               <br />Find jobs that best fit your profession.</p>
+           <div className='pr-30 '>
+             <h2 className='lg:font-bold font-extrabold lg:text-3xl md:text-5xl text-6xl mb-8  '>
+                Stay Home And Find Job
+             </h2>
+               <p className='text-xl font-semibold text-gray-800'>Find Job With No Stress With Just A Click
+               Find jobs that best fit your profession.</p>
            </div>
        </div>
 
