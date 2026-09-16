@@ -9,9 +9,9 @@ const HomePage = () => {
   return (
   <> 
   
-     <div className='lg:text-base md:text-5xl text-7xl lg:font-medium md:font-light font-light 
-               bg-gray-800 text-white lg:py-8 py-15 text-center lg:mt-6 md:mt-12 mt-18 lg:w-full w-6xl px-8'>
-        <p className=' '> Your Gateway to Exciting Job Opportunities And Aslo,The perfect Platform 
+     <div className='lg:text-xl md:text-5xl text-7xl lg:font-small md:font-light font-light 
+               bg-gray-800 text-white lg:py-16 py-15 text-center lg:mt-6 md:mt-12 mt-18 lg:w-full w-6xl px-20'>
+        <p> Your Gateway to Exciting Job Opportunities And Aslo,The perfect Platform 
            to find the perfect employee by listing the job vacancies in your company or organization.</p>
 
      </div>
@@ -26,7 +26,7 @@ const HomePage = () => {
              <h2 className='lg:font-bold font-extrabold lg:text-3xl md:text-5xl text-6xl mb-8  '>
                 Stay Home And Find Job
              </h2>
-               <p className='text-xl font-semibold text-gray-800'>Find Job With No Stress With Just A Click
+               <p className='text-xl font-small text-gray-800'>Find Job With No Stress With Just A Click
                Find jobs that best fit your profession.</p>
            </div>
        </div>
