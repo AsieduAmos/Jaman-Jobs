@@ -4,3 +4,5 @@ Concurrently, companies and employers can list job vacancies to scout and hire t
 The platform includes a Job Posting page designed for employers to publish and track active job vacancies.
 To list a vacancy, employers can navigate to the Add Job page to post new openings.
 The platform includes an internal job board page where employees can browse, filter, and view open positions
+
+![alt text](<Screenshot 2026-09-18 233143.png>) ![alt text](<Screenshot 2026-09-18 233246.png>) ![alt text](<Screenshot 2026-09-18 233335.png>) ![alt text](<Screenshot 2026-09-18 233555.png>) ![alt text](<Screenshot 2026-09-18 233628.png>) ![alt text](<Screenshot 2026-09-18 233716.png>)
