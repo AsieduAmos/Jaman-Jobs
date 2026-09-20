@@ -11,7 +11,7 @@ const HomePage = () => {
   <> 
   
      <div className='lg:text-xl md:text-5xl text-7xl lg:font-small md:font-light font-light 
-               bg-gray-400 text-white lg:py-10 py-15 text-center lg:mt-6 md:mt-12 mt-18 lg:w-full w-6xl px-20'>
+               bg-gray-600 text-white lg:py-10 py-15 text-center lg:mt-6 md:mt-12 mt-18 lg:w-full w-6xl px-20'>
         <p>Your Gateway to Career Growth and Top Talent.
           Whether you are looking for your next exciting job opportunity 
           or searching for the perfect employee, our platform bridges the gap. 
@@ -19,8 +19,8 @@ const HomePage = () => {
       </div>
 
         <div className='grid lg:grid-cols-2 grid-cols-1 items-center
-              pointer-events-none select-none lg:mt-10 mt-15 mb-15 ml-30'>
-           <div className='pr-30'>
+              pointer-events-none select-none lg:mt-10 mt-15 mb-20 ml-30'>
+           <div className='px-6 py-15 border border-gray-300 rounded-lg shadow-md lg:mr-10 mr-100'>
               <p className='text-xl font-small text-gray-800'>
                 Find the right employee quickly and easily with our user-friendly platform.
                 Streamline your hiring process and connect with qualified
@@ -41,12 +41,14 @@ const HomePage = () => {
            lg:px-10 px-15 lg:py-1 md:py-4 py-5 ml-70 text-center rounded-lg cursor-pointer hover:bg-black
            hover:text-white transition duration-300 ease-in-out'>Add Job</NavLink>
       </div>
-       
+      <div className='bg-gray-300 py-6 mt-4 shadow-md'>
+        
+      </div>       
        <div className='grid lg:grid-cols-2 grid-cols-1 items-center
-              pointer-events-none select-none lg:mt-12 mt-15 mb-10'>
+              pointer-events-none select-none lg:mt-8 mt-15 mb-20'>
            <img className='ml-100 lg:ml-50 w-100' src={findjob} 
              alt=" black young man looking on mobile phone" />
-           <div className='pr-30 '>
+           <div className='px-6 py-15 border border-gray-300 rounded-lg shadow-md lg:mr-20 mr-100'>
             
                <p className='text-xl font-small text-gray-800'>
                 Find your next job with a single click. 
