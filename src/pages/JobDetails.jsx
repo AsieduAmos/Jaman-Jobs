@@ -12,7 +12,7 @@ const JobDetails = () => {
   return (
     <>
     <section>
-        <div className='py-6 font-bold text-center text-white mt-3 bg-gray-600'>
+        <div className='py-6 font-bold text-center text-white mt-24 bg-gray-600'>
          <Link 
            to='/jobpage'
            className=' flex items-center ml-140 text-lg ' 
