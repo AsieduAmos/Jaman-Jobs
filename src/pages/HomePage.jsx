@@ -20,7 +20,7 @@ const HomePage = () => {
 
         <div className='grid lg:grid-cols-2 grid-cols-1 items-center
               pointer-events-none select-none lg:mt-10 mt-15 mb-20 ml-30'>
-           <div className='px-6 py-15 border border-gray-300 rounded-lg shadow-md lg:mr-10 mr-100'>
+           <div className='px-6 py-12 pb-30 border border-gray-300 rounded-lg shadow-md mt-10 lg:mr-10 mr-100'>
               <p className='text-xl font-small text-gray-800'>
                 Find the right employee quickly and easily with our user-friendly platform.
                 Streamline your hiring process and connect with qualified
@@ -30,7 +30,7 @@ const HomePage = () => {
            <img className='lg:ml-10 ml-100  w-100' src={employer} 
              alt=" black man sitting beside a laptop on a table." />
        </div>
-       <div className='bg-gray-200 text-gray-900 lg:w-3xl md:w-5xl w-5xl lg:py-5 py-20 lg:px-5 px-15 lg:ml-70 md:ml-90 ml-180
+       <div className='bg-gray-200 text-gray-900 lg:w-3xl md:w-5xl w-5xl lg:py-5 py-20 lg:px-5 px-15 pb-20 lg:ml-70 md:ml-90 ml-180
          lg:mt-10 shadow-md lg:rounded-lg rounded-4xl'>
         <p className='lg:font-normal font-light  lg:text-base md:text-4xl text-6xl lg:pb-2 pb-15 lg:my-3 my-6'> 
           Our platform makes it easy to find the perfect fit for your team.
@@ -48,7 +48,7 @@ const HomePage = () => {
               pointer-events-none select-none lg:mt-8 mt-15 mb-20'>
            <img className='ml-100 lg:ml-50 w-100' src={findjob} 
              alt=" black young man looking on mobile phone" />
-           <div className='px-6 py-15 border border-gray-300 rounded-lg shadow-md lg:mr-20 mr-100'>
+           <div className='px-6 py-12 pb-30 border border-gray-300 rounded-lg shadow-md lg:mr-20 mr-100'>
             
                <p className='text-xl font-small text-gray-800'>
                 Find your next job with a single click. 
