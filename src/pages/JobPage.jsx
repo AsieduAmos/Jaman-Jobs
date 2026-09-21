@@ -23,7 +23,7 @@ const JobPage = () => {
 
 return (
    <>
-    <div className=' bg-slate-100  '>
+    <div className=' bg-slate-100 mt-24 '>
       <h2 className='font-bold text-4xl text-center text-white p-10 my-5 bg-gray-600'>Browse Jobs</h2>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-5 px-8 mb-10'>
         {jobs.map((job) => (

@@ -11,7 +11,7 @@ const HomePage = () => {
   <> 
   
      <div className='lg:text-xl md:text-5xl text-7xl lg:font-small md:font-light font-light 
-               bg-gray-600 text-white lg:py-10 py-15 text-center lg:mt-6 md:mt-12 mt-18 lg:w-full w-6xl px-20'>
+               bg-gray-600 text-white lg:py-10 py-15 text-center lg:mt-24 md:mt-12 mt-18 lg:w-full w-6xl px-20'>
         <p>Your Gateway to Career Growth and Top Talent.
           Whether you are looking for your next exciting job opportunity 
           or searching for the perfect employee, our platform bridges the gap. 

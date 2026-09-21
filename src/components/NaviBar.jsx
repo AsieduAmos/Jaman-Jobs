@@ -12,7 +12,7 @@ const NaviBar = () => {
   
   return (
     <>
-    <div className="flex lg:space-x-4 space-x-6 lg:h-22 md:h-50 h-80 lg:w-full w-6xl items-center border-t border-b border-gray-400 shadow-lg">
+    <div className="fixed top-0 left-0 w-full  flex lg:space-x-4 space-x-6 lg:h-22 md:h-50 h-80 lg:w-full w-6xl items-center border-t border-b border-gray-400 shadow-lg">
           <div className='flex lg:mr-100  mr-27'>
             <img className='pointer-events-none select-none lg:ml-30 md:ml-10 ml-10 lg:w-16 md:w-27 w-30' src={FJ} alt="" />
             <div className='lg:font-extrabold font-bold italic lg:text-xl text-5xl lg:ml-1 ml-4 lg:mt-3 md:mt-6 mt-8 text-gray-800'>

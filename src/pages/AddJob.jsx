@@ -41,7 +41,7 @@ const [title, setTitle] = useState('')
   return (
     <>
     <section className='bg-slate-100'> 
-      <div className='container m-auto max-w-xl pt-15'>
+      <div className='container m-auto max-w-xl pt-15 mt-23'>
         <div className='bg-white p-10 mb-4 shadow-xl rounded-t-xl'> 
            <form onSubmit={formSubmit}>
              <h3 className='text-2xl text-center text-gray-900 font-bold mb-6'>Add New Job</h3>
