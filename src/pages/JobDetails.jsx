@@ -12,14 +12,8 @@ const JobDetails = () => {
   return (
     <>
     <section>
-        <div className='py-6 font-bold text-center text-white mt-24 bg-gray-600'>
-         <Link 
-           to='/jobpage'
-           className=' flex items-center ml-140 text-lg ' 
-           >
-             <FaArrowLeft className='mr-1 text-lg' />
-             Back to Browse Jobs
-          </Link>
+        <div className='py-8 font-bold text-center text-white mt-24 bg-gray-600'>
+        
         </div>
     </section>
     
@@ -95,7 +89,7 @@ const JobDetails = () => {
 }
 
 const jobLoader = async ({ params }) => {
-    const response = await fetch(`http://localhost:7000/jobs/${params.id}`);   
+    const response = await fetch(`/api/jobs/${params.id}`);   
     const data = await response.json();
     return data;
 };
