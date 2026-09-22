@@ -51,13 +51,13 @@ const JobDetails = () => {
             <aside>
                 <div className='bg-white p-6 rounded-lg shadow-md '>
                     <h3 className='text-2xl text-gray-700 font-bold mb-4'>Company Information</h3>
-                    <h2 className='mb-3 text-gray-700 font-bold'>{job.company.name}</h2>
-                    <p className='mb-3 text-gray-600 font-semibold'>{job.company.description}</p>
+                    <h2 className='mb-3 text-gray-700 font-bold'>{job?.company?.name}</h2>
+                    <p className='mb-3 text-gray-600 font-semibold'>{job?.company?.description}</p>
                     <hr className='my-4' />
                     <h3 className='text-2xl text-gray-700 font-bold'>Contact Email</h3>
-                    <p className=' my-2 bg-gray-300 font-bold p-2'>{job.company.email}</p>
+                    <p className=' my-2 bg-gray-300 font-bold p-2'>{job?.company?.email}</p>
                     <h3 className='text-2xl text-gray-700 font-bold'>Contact Phone</h3>
-                    <p className='bg-gray-300 p-2 font-bold'>{job.company.phone}</p>
+                    <p className='bg-gray-300 p-2 font-bold'>{job?.company?.phone}</p>
                 </div>
 
                 <div className='bg-white p-5 rounded-lg shadow-md mt-6'>

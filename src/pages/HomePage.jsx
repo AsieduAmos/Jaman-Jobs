@@ -2,6 +2,7 @@ import React from 'react'
 import{ NavLink } from 'react-router-dom' 
 import findjob from '../images/findjob.png'
 import employer from '../images/employer.jpg'
+import JobPage from './JobPage'
 
 
 
@@ -67,6 +68,8 @@ const HomePage = () => {
         lg:px-12 px-15 lg:py-1 md:py-4 py-5 text-center rounded-lg cursor-pointer hover:bg-indigo-700 
         hover:text-white transition duration-300 ease-in-out'>Find Job</NavLink>
      </div>
+
+     <JobPage isHome = {true} />
       
     
   </>
