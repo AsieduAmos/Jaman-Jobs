@@ -2,18 +2,31 @@ import React from 'react'
 import FJ from '../images/FJ.png'
 
 const Foot = () => {
+  // Automatically grab the current year so it's always up-to-date
+  const currentYear = new Date().getFullYear();
+
   return (
-    <> 
-    
-    <footer className='bg-gray-800 text-white py-10 lg:w-full w-6xl mt-8'>
-        <div className='flex items-center justify-center lg:my-5 my-15 pointer-events-none select-none'>
-       <img className='lg:w-18 w-30'src={FJ} alt="" />
-    </div>
-        <div className='container mx-auto lg:px-2 '>
-            <p className='text-center lg:text-sm text-5xl'>© 2024 FindJobs. All rights reserved.</p>
+    <footer className="bg-gray-800 text-white py-8 md:py-10 border-t border-gray-700 w-full mt-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Logo Section */}
+        <div className="flex items-center justify-center mb-6 select-none pointer-events-none">
+          <img 
+            className="w-12 h-12 md:w-14 md:h-14 object-contain" 
+            src={FJ} 
+            alt="Find Jobs Logo" 
+          />
         </div>
+        
+        {/* Copyright Notice */}
+        <div className="border-t border-gray-700/50 pt-6">
+          <p className="text-center text-sm md:text-base text-gray-400 font-medium tracking-wide">
+            &copy; {currentYear} FindJobs. All rights reserved.
+          </p>
+        </div>
+
+      </div>
     </footer>
-    </>
   )
 }
 
