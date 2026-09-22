@@ -1,90 +1,105 @@
 import React from 'react'
 import { useParams, useLoaderData } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { FaArrowLeft, FaMapMarker} from 'react-icons/fa'
-
+import { FaArrowLeft, FaMapMarker } from 'react-icons/fa'
 
 const JobDetails = () => {
-
     const { id } = useParams();
     const job = useLoaderData();
 
   return (
-    <>
-    <section>
-        <div className='py-8 font-bold text-center text-white mt-24 bg-gray-600'>
-        
-        </div>
-    </section>
-    
-    <section className='bg-indigo-50'>
-        <div className='container m-auto py-6 px-4'>  
-            <div className='grid grid-cols-2 md:grid-cols-70/30 w-full gap-6'>
-            <main>
-                <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
-                    <div className='mb-4 font-thin text-gray-500'>{job.type}</div>
-                    <h1 className='text-2xl text-gray-700 font-bold mb-4'>{job.title}</h1>
-                    <div className='mb-3 flex align middle justify-center md:justify-start'>
-                     <FaMapMarker className=' text-red-700 mr-1' />
-                     <p className='text-orange-700'>{job.location}</p>
-                    </div>
-                </div>
-
-                <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-                    <h3 className='text-2xl text-gray-700 font-bold mb-4 mt-6'>Job Description</h3>
-                    <p className='mb-3 text-gray-600 font-semibold'>
-                        {job.description}
-                    </p>
-                    <h3 className='text-2xl text-gray-700 font-bold mb-2'>
-                        Salary
-                    </h3>
-                    <p className='text-gray-700 mb-4'>{job.salary}</p>
-                </div>
-            </main>
-
-            <aside>
-                <div className='bg-white p-6 rounded-lg shadow-md '>
-                    <h3 className='text-2xl text-gray-700 font-bold mb-4'>Company Information</h3>
-                    <h2 className='mb-3 text-gray-700 font-bold'>{job?.company?.name}</h2>
-                    <p className='mb-3 text-gray-600 font-semibold'>{job?.company?.description}</p>
-                    <hr className='my-4' />
-                    <h3 className='text-2xl text-gray-700 font-bold'>Contact Email</h3>
-                    <p className=' my-2 bg-gray-300 font-bold p-2'>{job?.company?.email}</p>
-                    <h3 className='text-2xl text-gray-700 font-bold'>Contact Phone</h3>
-                    <p className='bg-gray-300 p-2 font-bold'>{job?.company?.phone}</p>
-                </div>
-
-                <div className='bg-white p-5 rounded-lg shadow-md mt-6'>
-                    <h3 className='text-2xl text-gray-700 font-bold mb-6 ml-50'>Manage Job</h3>
-                    <Link
-                    to={`/addjob/edit/${job.id}`} className='bg-gray-800 hover:bg-gray-900
-                     text-white text-center font-bold py-2 px-4 rounded-lg w-full focus:outline-none
-                      focus:shadow-outline mt-6 block'>
-                        Edit Job
-                    </Link>
-                    <button className='bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-lg w-full
-                     focus:outline-none focus:shadow-outline mt-4 block'>
-                        Delete Job
-                    </button>
-                </div>
-            </aside>
-
-            </div>
-        </div>
-
-    </section>
-    <section>
-        <div className='py-6 font-bold text-center text-white mb-6 bg-gray-600'>
-         <Link 
-           to='/jobpage'
-           className=' flex items-center ml-140 text-lg ' 
-           >
-             <FaArrowLeft className='mr-1 text-lg' />
-             Back to Browse Jobs
+    <div className="bg-indigo-50 min-h-screen pt-20">
+      
+      {/* Back Navigation Bar */}
+      <nav className="bg-gray-600 text-white py-4 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link 
+            to="/jobpage"
+            className="inline-flex items-center text-base font-medium hover:text-gray-200 transition-colors" 
+          >
+            <FaArrowLeft className="mr-2 text-sm" />
+            Back to Browse Jobs
           </Link>
         </div>
-    </section>
-    </>
+      </nav>
+
+      {/* Main Layout Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">  
+        {/* Responsive Grid Layout: Stacks vertically on mobile/tablet, side-by-side on large screens */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+          
+          {/* Main Content Area (Spans 2 columns on desktop) */}
+          <main className="lg:col-span-2 space-y-6">
+            
+            {/* Header Card */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
+              <span className="inline-block bg-indigo-50 text-indigo-700 text-sm font-semibold px-3 py-1 rounded-full mb-3">
+                {job?.type}
+              </span>
+              <h1 className="text-2xl md:text-3xl text-gray-800 font-bold mb-4">{job?.title}</h1>
+              <div className="flex items-center justify-center md:justify-start text-gray-600 font-medium">
+                <FaMapMarker className="text-red-600 mr-2 text-sm flex-shrink-0" />
+                <p className="text-gray-700">{job?.location}</p>
+              </div>
+            </div>
+
+            {/* Description & Salary Card */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl text-gray-800 font-bold mb-4">Job Description</h3>
+              <p className="text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
+                {job?.description}
+              </p>
+              
+              <h3 className="text-xl text-gray-800 font-bold mb-2">Salary</h3>
+              <p className="text-indigo-700 font-semibold text-lg">{job?.salary}</p>
+            </div>
+          </main>
+
+          {/* Sidebar Area (Spans 1 column on desktop) */}
+          <aside className="space-y-6">
+            
+            {/* Company Info Card */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl text-gray-800 font-bold mb-4 border-b pb-2">Company Information</h3>
+              <h4 className="text-lg text-gray-900 font-bold mb-2">{job?.company?.name}</h4>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">{job?.company?.description}</p>
+              
+              <div className="space-y-3 pt-2">
+                <div>
+                  <h5 className="text-xs font-bold uppercase tracking-wider text-gray-400">Contact Email</h5>
+                  <p className="mt-1 bg-slate-50 border border-slate-200 text-gray-700 break-all font-semibold rounded p-2 text-sm">
+                    {job?.company?.email}
+                  </p>
+                </div>
+                <div>
+                  <h5 className="text-xs font-bold uppercase tracking-wider text-gray-400">Contact Phone</h5>
+                  <p className="mt-1 bg-slate-50 border border-slate-200 text-gray-700 font-semibold rounded p-2 text-sm">
+                    {job?.company?.phone}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Admin Management Card */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl text-gray-800 font-bold mb-4 text-center">Manage Job</h3>
+              <div className="space-y-3">
+                <Link
+                  to={`/addjob/edit/${job?.id}`} 
+                  className="block w-full bg-gray-800 hover:bg-gray-900 text-white text-center font-bold py-2.5 px-4 rounded-lg transition duration-200 shadow-sm"
+                >
+                  Edit Job
+                </Link>
+                <button className="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-lg transition duration-200 shadow-sm">
+                  Delete Job
+                </button>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -94,5 +109,4 @@ const jobLoader = async ({ params }) => {
     return data;
 };
  
-
 export { JobDetails as default, jobLoader };
